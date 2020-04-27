@@ -5,7 +5,7 @@
 **Date:** 04/27/2020 <br />
 **Course:** CSCI 573 - Human Centered Robotics <br />
 **Assignment:** Robot Understanding of Human Behaviors Using Skeleton-Based Representations <br />
-**Task 2:** Robot Learning From Data (see line 48 for task 2 deliverables) <br />
+**Task 2:** Robot Learning From Data (see **Task 2 Deliverables** for deliverables) <br />
 
 
 <h2>OVERVIEW</h2>
