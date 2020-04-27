@@ -5,7 +5,6 @@
 **Date:** 04/27/2020 <br />
 **Course:** CSCI 573 - Human Centered Robotics <br />
 **Assignment:** Robot Understanding of Human Behaviors Using Skeleton-Based Representations <br />
-**Task 2:** Robot Learning From Data (see **Task 2 Deliverables** for deliverables) <br />
 
 
 <h2>OVERVIEW</h2>
@@ -52,13 +51,13 @@ The (x,y,z) positions of the following 20 skeletal joints are recorded for a var
 Descriptions of how I implemented each of the three representations using the skeletal joint position data is detailed in the **Solution Description** section.
 
 
-<h2>TASK 2 DELIVERABLES</h2>
+<h2>CURRENT RESULTS</h2>
 
-Listed below are the directory locations for the Task 2 required deliverables. More information on the directory layout within the *D2_casey_duncan* directory is provided in the **Directory Layout** section.
+Listed below are the directory locations for the Task 2 required deliverables. More information on the directory layout within the *Human-Behavior-Classifier* directory is provided in the **Directory Layout** section.
 
 1. Grid Search graphs:
-    - Directory: *D2_casey_duncan/project3/output_data/output_data_folder* <br />
-    **NOTE:** See the layout for the *D2_casey_duncan/project3/output_data* directory in the **Directory Layout** section below for how the naming convention for each *output_data_folder* is formatted.
+    - Directory: *Human-Behavior-Classifier/project3/output_data/output_data_folder* <br />
+    **NOTE:** See the layout for the *Human-Behavior-Classifier/project3/output_data* directory in the **Directory Layout** section below for how the naming convention for each *output_data_folder* is formatted.
 
 2. Best bin sizes, C values, & gamma values:
 	- RAD: angle bins = 11, distance bins = 11, C = 8.0, gamma = 0.03125 --> Accuracy = 60.4167%
@@ -66,16 +65,16 @@ Listed below are the directory locations for the Task 2 required deliverables. M
 	- HOD: bins = 22, C = 2.0, gamma = 0.03125 --> Accuracy = 89.5833%
 
 3. Converted Representation Files & Output Prediction Files:
-	- Directory: *D2_casey_duncan/project3/output_data/output_data_folder* <br />
-	**NOTE:** See the layout for the *D2_casey_duncan/project3/output_data* directory in the **Directory Layout** section below for how the naming convention for each *output_data_folder* is formatted.
+	- Directory: *Human-Behavior-Classifier/project3/output_data/output_data_folder* <br />
+	**NOTE:** See the layout for the *Human-Behavior-Classifier/project3/output_data* directory in the **Directory Layout** section below for how the naming convention for each *output_data_folder* is formatted.
 
 4. Figure showing representation bin size vs. accuracy:
-	- Directory: *D2_casey_duncan/project3/data_analysis*
+	- Directory: *Human-Behavior-Classifier/project3/data_analysis*
 	- File name: Bin Size vs Accuracy Plot.png
 
 5. Python Code:
-	- Directory: *D2_casey_duncan/project3/code* <br />
-	**NOTE:** This contains all code used by main.py, which is within the *D2_casey_duncan* folder.
+	- Directory: *Human-Behavior-Classifier/project3/code* <br />
+	**NOTE:** This contains all code used by main.py, which is within the *Human-Behavior-Classifier* folder.
 
 
 <h2>DIRECTORY LAYOUT</h2>
@@ -89,19 +88,19 @@ These files are used for installing the poetry python virtual environment contai
 
 There are also the following folders within this directory:
 
-1. *D2_casey_duncan/project3* <br />
+1. *Human-Behavior-Classifier/project3* <br />
 This containes the folders *code*, *dataset*, *data_analysis*, and *output_data*.
 
-2. *D2_casey_duncan/project3/code* <br />
+2. *Human-Behavior-Classifier/project3/code* <br />
 This contains all code used by main.py.
 
-3. *D2_casey_duncan/project3/dataset* <br />
+3. *Human-Behavior-Classifier/project3/dataset* <br />
 This contains all of the training & test data.
 
-4. *D2_casey_duncan/project3/data_analysis* <br />
+4. *Human-Behavior-Classifier/project3/data_analysis* <br />
 This contains an excel file comparing the representation bin sizes and results grid search accuracies, as well as an image of this data plotted.
 
-5. *D2_casey_duncan/project3/output_data* <br />
+5. *Human-Behavior-Classifier/project3/output_data* <br />
 This contains several folders holding all of the saved representations training & testing data. Each folder name represents the number of bins used when generating each representation. For example, folder *ra10_rd10_hj24_hd14* holds the data for:
 
     - RAD representation trained & tested using 10 bins for RAD angles (*ra*) and 10 bins for RAD distances (*rd*).
@@ -128,7 +127,7 @@ This contains several folders holding all of the saved representations training 
 
 I chose to program this project using Python version 3.8. To run the code for this project, follow the steps below:
 
-1. Save the folder named *D2_casey_duncan* to a desired directory in on your computer and use the Ubuntu terminal to navigate into this directory.
+1. Save the folder named *Human-Behavior-Classifier* to a desired directory in on your computer and use the Ubuntu terminal to navigate into this directory.
 
 2. Install the following required Python packages to run this code.
 
@@ -142,11 +141,11 @@ I chose to program this project using Python version 3.8. To run the code for th
     - argparse
 
     In addition to the packages above, you need to install the libsvm python tools (Download at https://www.csie.ntu.edu.tw/~cjlin/libsvm/). If you download these from the provided link yourself, ensure to follow the following steps to ensure they run with my provided code:
-    1. Download the libsvm package as a .zip or .tar.gz file from the link above and save into the *D2_casey_duncan* directory.
-    2. Unpack the files so the libsvm package is contained within a new folder within the *D2_casey_duncan* directory. When I downloaded this package, the latest released version for libsvm was version 3.24 so the folder name containing all the libsvm files was called *libsvm-3.24*.
+    1. Download the libsvm package as a .zip or .tar.gz file from the link above and save into the *Human-Behavior-Classifier* directory.
+    2. Unpack the files so the libsvm package is contained within a new folder within the *Human-Behavior-Classifier* directory. When I downloaded this package, the latest released version for libsvm was version 3.24 so the folder name containing all the libsvm files was called *libsvm-3.24*.
     3. Within the terminal, navigate into the *libsvm-3.24* directory and enter `make` into the terminal so that the libsvm python files can be used.
 
-    I use poetry on my computer to setup python virtual environments for different projects. If you have poetry installed on your computer, you can install the above packages (not including libsvm) by entering `poetry install` into the terminal since I included the .lock and .toml files within the *D2_casey_duncan* folder. If you do not have poetry, install the packages above into your python enviroment using your prefered method.
+    I use poetry on my computer to setup python virtual environments for different projects. If you have poetry installed on your computer, you can install the above packages (not including libsvm) by entering `poetry install` into the terminal since I included the .lock and .toml files within the *Human-Behavior-Classifier* folder. If you do not have poetry, install the packages above into your python enviroment using your prefered method.
 
 3. Now run the code using the Command Line Interface (CLI) I have created. The code is currently setup to allow the user to change the bin size, C value, and gamma value for each representation from the terminal. To see the optional arguments, run the code by doing one of the following:
     - If using the poetry environment, enter the `poetry run python main.py -h` into the terminal.
