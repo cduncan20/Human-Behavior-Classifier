@@ -12,11 +12,11 @@
 
 The goal of this project was to use the skeleton data from the MSR Daily Activity 3D dataset to construct three skeleton-based human representations and then apply Support Vector Machines (SVMs) to enable robot behavior understanding using these representations on the LIBSVM library. These three representations are provided below:
 
-1. Relative Angles and Distances (RAD)
+1. Relative Angles and Distances (RAD) <br />
 http://inside.mines.edu/~hzhang/Courses/CSCI473-573/Projects/Project-3-Spring20-D1.pdf
-2. Histogram of Joint Position Differences (HJPD)
+2. Histogram of Joint Position Differences (HJPD) <br />
 https://staffhome.ecm.uwa.edu.au/~00053650/papers/hossein_WACV2014.pdf
-3. Histogram of Oriented Displacements (HOD)
+3. Histogram of Oriented Displacements (HOD) <br />
 https://www.aaai.org/ocs/index.php/IJCAI/IJCAI13/paper/view/6967
 
 The skeleton data is made of skeletal joint position data of people performing the following six activities:
