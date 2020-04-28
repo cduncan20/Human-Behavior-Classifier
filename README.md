@@ -1,6 +1,6 @@
 <h1>Human Centered Robotics: Human Behavior Classifier</h1>
 
-**Name:** Casey Duncan <br />
+**Author:** Casey Duncan <br />
 **Date:** 04/27/2020 <br />
 **Course:** CSCI 573 - Human Centered Robotics <br />
 **Assignment:** Robot Understanding of Human Behaviors Using Skeleton-Based Representations <br />
