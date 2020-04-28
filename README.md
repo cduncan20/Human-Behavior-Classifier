@@ -23,7 +23,7 @@ The skeleton data is made of skeletal joint position data of people performing t
 2. Toss Paper (activity 10)
 3. Lie On Sofa (activity 12)
 4. Walk (activity 13)
-5. Stan dUp (activity 15)
+5. Stand Up (activity 15)
 6. Sit Down (activity 16)
 
 The (x,y,z) positions of the following 20 skeletal joints are recorded for a variety of number of video frames to capture each activity:
