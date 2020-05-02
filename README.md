@@ -261,7 +261,7 @@ The pseudo code for generating each of the three representations is shown below:
 		5. Histogram capturing data in second quarter of all frames
 		6. Histogram capturing data in third quarter of all frames
 		7. Histogram capturing data in fourth quarter of all frames
-	    The range for each histogram should be between -pi radians and +pi radians since the angles can vary between these two values. The bin size for each histogram is chosen by the user. I selected 10 bins for this exercise.
-	3. Normalize the data for each of the histograms based on the number of frames that make up each histogram.
-	4. Cocatenate all 7 histograms together into a single vector of histogram values.
+	3. The range for each histogram should be between -pi radians and +pi radians since the angles can vary between these two values. The bin size for each histogram is chosen by the user. I selected 10 bins for this exercise.
+	4. Normalize the data for each of the histograms based on the number of frames that make up each histogram.
+	5. Cocatenate all 7 histograms together into a single vector of histogram values.
 2. Save the 7 combined histograms for each file as *hod_d1* for the training data and *hod_d1.t* for the testing data. Data is saved in svm format.
