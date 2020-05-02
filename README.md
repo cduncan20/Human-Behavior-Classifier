@@ -234,7 +234,7 @@ The pseudo code for generating each of the three representations is shown below:
 		`distance_vector = (x_i - x_r, y_i - y_r, z_i - z_r)`
 		3. Save each distance measurement into a vector. There will be 57 measurements in total, since there are 20 joints and there are 3 measurements (delta_x, delta_y, delta_z) per joint.
 	2. Find the minimum and maximum values for each distance type in all frames.
-2. Find the minimum and maximum values for each angle type and distance type in all data files.
+2. Find the minimum and maximum values for each delta_x, delta_y, delta_z in all data files.
 3. For each data file, compute the following:
 	1. Save each distance type for all frames to its own histogram with the range being from the minimum value of that distance type to the maximum value of that distance type for all frames and using the user selected bin size. I selected 10 bins for this exercise. There will be 57 different distance histograms, one for each distance type.
 	2. Normalize the data for each of the distance histograms based on the number of frames in each data file.
