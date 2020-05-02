@@ -249,9 +249,9 @@ The pseudo code for generating each of the three representations is shown below:
 		2. Calculate distance vector between each joint in frame *n* and the same joint in frame *n+1*. The equation for calculating the distance vector is shown below: <br />
         	`distance_vector = (x_n - x_n+1, y_n - y_n+1, z_n - z_n+1)`
 		3. Calculate the angle in the principle plane projections for each joint from frame *n* to frame *n+1*. The equations for this is shown below: <br />
-        	`angle_xy = atan2(distance_vector[1], distance_vector[0])`
-        	`angle_yz = atan2(distance_vector[2], distance_vector[1])`
-        	`angle_xz = atan2(distance_vector[2], distance_vector[0])`
+        	`angle_xy = atan2(distance_vector[1], distance_vector[0])` <br />
+        	`angle_yz = atan2(distance_vector[2], distance_vector[1])` <br />
+        	`angle_xz = atan2(distance_vector[2], distance_vector[0])` <br />
 		4. Save angle in the principle plane projections from frame *n* to frame *n+1* for all joints and all frames. Because there are 20 joints and each joint has 3 angles in the principle plane projections, there should be 60 different angle measurements per frame (n, n+1) pair.
 	2. Create the following histograms for each of the 60 angle types:
 		1. Histogram capturing data in all frames
