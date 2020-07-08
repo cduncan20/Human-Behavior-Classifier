@@ -83,7 +83,7 @@ Within this directory are the following files:
 This file is used to run all of the code for project 3. See the **How to run code** section below for how to run these programs.
 
 2. *poetry.lock* and *pyproject.toml* <br />
-These files are used for installing the poetry python virtual environment containing all python packages required to run all of the code. If you do not have poetry installed on your computer, you can use your own python environment for running the code. However, you will need to install the packages shown in step 2 of the **How to run code** section below.
+These files are used for installing the poetry python virtual environment containing all python packages required to run all of the code. If you do not have poetry installed on your computer, you can either install it by following the steps in this [link](https://python-poetry.org/docs/) or use your own python environment for running the code. However, you will need to install the packages shown in step 2 of the **How to run code** section below.
 
 There are also the following folders within this directory:
 
